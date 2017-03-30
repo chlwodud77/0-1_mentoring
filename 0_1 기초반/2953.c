@@ -5,9 +5,11 @@ int main(){
 	int i;
 	int max = 10;
 	int max_count;
+	
 	for(i=0; i<5; i++){
 		score[i] = 0;
 	}
+
 	for(i=0; i< 5; i++){
 		int N;
 		int j;
@@ -15,14 +17,18 @@ int main(){
 			scanf("%d",&N);
 			score[i] += N;
 		}
-	}
-
-	for(i=0; i<5; i++){
 		if(score[i] > max){
 			max = score[i];
 			max_count = i+1;
 		}
 	}
+
+	// for(i=0; i<5; i++){
+	// 	if(score[i] > max){
+	// 		max = score[i];
+	// 		max_count = i+1;
+	// 	}
+	// }
 
 	printf("%d %d\n",max_count,max);
 
