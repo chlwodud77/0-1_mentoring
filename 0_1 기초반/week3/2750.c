@@ -14,7 +14,7 @@ int main(){
 	}
 
 	for(i=0; i<N; i++){
-		for(j=0; j<N-i-1; j++){
+		for(j=0; j<N-1; j++){
 			if(data[j] > data[j+1]){
 				temp = data[j+1];
 				data[j+1] = data[j];
